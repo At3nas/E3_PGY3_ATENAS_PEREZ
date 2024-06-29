@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,16 +14,18 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- CUSTOM | CSS -->
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/contacto.css">
-  <link rel="stylesheet" href="styles/register.css">
+
+ <link rel="stylesheet" href="{% static 'pages/styles/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'pages/styles/contacto.css' %}">
+  <link rel="stylesheet" href="{% static 'pages/styles/register.css' %}">
+
 
   <!-- JQUERY | JS -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
 
   <!-- CUSTOM | JS -->
-  <script src="./scripts/contacto.js"></script>
+  <script src="{% static 'pages/scripts/contacto.js' %}"></script>
 </head>
 
 <body>
@@ -105,17 +108,17 @@
       <div class="container text-center section-contact-info">
         <div class="row row-cols-auto">
           <div class="col">
-            <img src="./assets/icon-phone.svg" class="img-fluid">
+            <img src="{% static 'pages/assets/icon-phone.svg' %}" class="img-fluid">
             +56 9 1234 5678
           </div>
 
           <div class="col">
-            <img src="./assets/icon-email.svg" class="img-fluid">
+            <img src="{% static 'pages/assets/icon-email.svg' %}" class="img-fluid">
             contacto@verdinos.cl
           </div>
 
           <div class="col">
-            <img src="./assets/icon-location.svg" class="img-fluid">
+            <img src="{% static 'pages/assets/icon-location.svg' %}" class="img-fluid">
             Santa Isabel 380
           </div>
         </div>
