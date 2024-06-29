@@ -28,8 +28,8 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-xl">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/logo.svg">
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'pages/assets/logo.svg' %}">
         Los Verdinos
       </a>
 
@@ -43,22 +43,22 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <!-- INICIO -->
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="/">Inicio</a>
           </li>
 
           <!-- CONTACTO -->
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="/contacto">Contacto</a>
           </li>
 
           <!-- NOSOTROS -->
           <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" href="/nosotros">Nosotros</a>
           </li>
 
           <!-- PRODUCTOS -->
           <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
+            <a class="nav-link" href="/productos">Productos</a>
           </li>
         </ul>
 
@@ -70,7 +70,7 @@
               <input type="search" placeholder="Buscar productos" aria-label="Search">
               <!-- SEARCH BUTTON -->
               <button class="btn btn-outline-success" type="submit">
-                <img src="assets/icon-search.svg">
+                <img src={% static 'pages/assets/icon-search.svg' %}>
               </button>
             </form>
           </div>
@@ -82,13 +82,13 @@
               </a>
               <!-- OPCIONES DEL MENU DESPLEGABLE -->
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="login.html">Iniciar sesión</a></li>
-                <li><a class="dropdown-item" href="register.html">Registrarse</a></li>
+                <li><a class="dropdown-item" href="/iniciar">Iniciar sesión</a></li>
+                <li><a class="dropdown-item" href="/registrarse">Registrarse</a></li>
               </ul>
             </li>
           </ul>
-          <a class="nav-link" href="cart.html">
-            <img src="assets/icon-cart.svg">
+          <a class="nav-link" href="/carrito">
+            <img src="{% static 'pages/assets/icon-cart.svg' %}">
           </a>
         </div>
       </div>

@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Los Verdinos | Registrarse</title>
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  <title>Los Verdinos | Carrito de compras</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'pages/assets/favicon.png' %}">
 
   <!-- BOOTSTRAP | CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- CUSTOM | CSS -->
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/register.css">
+  <link rel="stylesheet" href="{% static 'pages/styles/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'pages/styles/nosotros.css' %}">
+
 
   <!-- JQUERY | JS -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
 
   <!-- CUSTOM | JS -->
-  <script src="./scripts/register.js"></script>
 </head>
 
 <body>
@@ -95,55 +95,7 @@
   </nav>
 
   <main class="align-padding">
-    <header>
-      <h1>Registrarse</h1>
-    </header>
-
-
-    <div class="card text-bg-light">
-      <img src="./assets/bg-register.jpg" class="card-img" alt="...">
-      <div class="card-img-overlay">
-        <form class="register-form">
-          <div class="form-group mb-3">
-            <label for="name"><sup>(*)</sup>Nombre</label>
-            <input type="text" name="name" placeholder="John" class="form-control" id="inputName">
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="lastName"><sup>(*)</sup>Apellido</label>
-            <input type="text" name="lastName" placeholder="Doe" class="form-control" id="inputLastName">
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="email"><sup>(*)</sup>Correo electrónico</label>
-            <input type="email" name="email" placeholder="john.doe@mail.com" class="form-control" id="inputEmail">
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="pass"><sup>(*)</sup>Contraseña</label>
-            <input type="password" name="pass" class="form-control" id="inputPass">
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="pass2"><sup>(*)</sup>Confirme su contraseña</label>
-            <input type="password" name="pass2" class="form-control" id="inputPass2">
-          </div>
-
-          <div class="form-group mb-3">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="inputTerms">
-              <label class="form-check-label" for="inputTerms">
-                <sup>(*)</sup>Acepto los Términos y Condiciones de Uso
-              </label>
-            </div>
-          </div>
-
-          <button type="submit">Registrarse</button>
-        </form>
-      </div>
-    </div>
-
-
+    
 
   </main>
 
