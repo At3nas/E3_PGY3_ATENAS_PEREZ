@@ -1,0 +1,180 @@
+/* Estilos globales que están presentes en todas las páginas */
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* VARIABLES */
+:root {
+  /* COLORES */
+  --color-bg: #F2F2F2;
+  --color-primary: #4b6a32;
+  --color-secondary: #995C3E;
+  --color-bg-hover: #d4d4d4;
+}
+
+/* GLOBAL */
+* {
+  font-family: 'Nunito Sans', Arial, Calibri, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+h1,
+h2,
+form label {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+/* NAVBAR */
+nav.navbar,
+ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu {
+  background-color: var(--color-primary);
+}
+
+nav.navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 16px;
+}
+
+/* Navbar | Items de navegación */
+nav.navbar a {
+  font-weight: 600;
+  color: var(--color-bg);
+  transition: color 500ms;
+}
+
+nav.navbar a:hover {
+  color: var(--color-bg-hover);
+}
+
+/* Navbar | Espacio entre nav-items */
+ul.navbar-nav {
+  display: flex;
+  gap: 16px;
+}
+
+/* Navbar | Marca */
+a.navbar-brand {
+  display: flex;
+  gap: 16px;
+}
+
+nav.navbar a.navbar-brand {
+  font-weight: bold;
+}
+
+/* Navbar | Barra de búsqueda */
+nav.navbar div.d-flex form.form-control {
+  width: fit-content;
+  display: flex;
+  gap: 8px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  border-radius: 40px;
+  padding: 8px 16px;
+  background-color: var(--color-bg);
+  border: none;
+}
+
+nav.navbar div.d-flex form.form-control input {
+  background-color: var(--color-bg);
+  width: 25vw;
+  /* ancho de la barra de búsqueda */
+}
+
+nav.navbar div.d-flex form.form-control button,
+nav.navbar div.d-flex form.form-control input {
+  border: none;
+  padding: 0;
+  /* elimina borde y padding del botón e input */
+}
+
+nav.navbar div.d-flex form.form-control input:focus {
+  outline: none;
+  /* elimina el borde al hacer click en el input */
+}
+
+nav.navbar div.d-flex form.form-control button:hover {
+  background-color: transparent;
+  /* elimina el fondo al pasar cursor sobre botón */
+}
+
+a.nav-link {
+  padding: 0;
+  /* elimina el padding de los elementos de navegacion */
+}
+
+/* Dropdown Menu */
+a.nav-link.dropdown-toggle.show {
+  color: var(--color-bg-hover);
+}
+
+ul.dropdown-menu.show li a.dropdown-item:hover {
+  color: var(--color-primary);
+}
+
+div.navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  /* espacio entre botón de inicio de sesión y carrito */
+}
+
+
+/* FORMULARIOS */
+form {
+  width: 100%;
+}
+
+form label,
+form select,
+form .form-control {
+  width: 100%;
+  padding: 8px;
+}
+
+div.form-group.mb-3 {
+  width: 50%;
+}
+
+form button {
+  padding: 16px 32px;
+  border-radius: 40px;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  transition: background-color 700ms;
+  border: none;
+}
+
+form button:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {
+  .align-padding {
+    padding: 88px 128px;
+  }
+
+  div.carousel-inner {
+    border-radius: 500px 0 500px 0;
+    /* carousel en forma de hoja */
+  }
+}

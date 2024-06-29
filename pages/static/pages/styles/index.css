@@ -1,0 +1,9 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+div.card-group {
+  gap: 32px;
+}
