@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Verdinos | Iniciar sesión</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
+  <!-- BOOTSTRAP | CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- CUSTOM | CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/register.css">
+
+  <!-- JQUERY | JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <!-- CUSTOM | JS -->
+  <script src="./scripts/register.js"></script>
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-xl">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.svg">
+        Los Verdinos
+      </a>
+
+      <!-- COLLAPSE BUTTON -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- INICIO -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <!-- CONTACTO -->
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+          <!-- NOSOTROS -->
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+
+          <!-- PRODUCTOS -->
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+        </ul>
+
+
+        <div class="navbar-right">
+          <!-- SEARCH BAR -->
+          <div class="d-flex">
+            <form class="form-control me-2" role="search">
+              <input type="search" placeholder="Buscar productos" aria-label="Search">
+              <!-- SEARCH BUTTON -->
+              <button class="btn btn-outline-success" type="submit">
+                <img src="assets/icon-search.svg">
+              </button>
+            </form>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Iniciar sesión
+              </a>
+              <!-- OPCIONES DEL MENU DESPLEGABLE -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html">Iniciar sesión</a></li>
+                <li><a class="dropdown-item" href="register.html">Registrarse</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a class="nav-link" href="cart.html">
+            <img src="assets/icon-cart.svg">
+          </a>
+        </div>
+      </div>
+
+  </nav>
+
+  <main class="align-padding">
+    <header>
+      <h1>Iniciar sesión</h1>
+    </header>
+
+
+    <div class="card text-bg-light">
+      <img src="./assets/bg-login.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <form class="login-form">
+          <div class="form-group mb-3">
+            <label for="email"><sup>(*)</sup>Correo electrónico</label>
+            <input type="email" name="email" placeholder="john.doe@mail.com" class="form-control" id="inputEmail">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="pass"><sup>(*)</sup>Contraseña</label>
+            <input type="password" name="pass" class="form-control" id="inputPass">
+          </div>
+
+          <button type="submit">Iniciar sesión</button>
+        </form>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <!-- BOOTSTRAP | JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
