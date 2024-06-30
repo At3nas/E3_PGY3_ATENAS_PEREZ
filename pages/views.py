@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from dataManager.models import Producto
 
 # Create your views here.
 
@@ -17,7 +18,8 @@ def nosotros(request):
 
 # Página de Productos
 def productos(request):
-    return render(request, "productos.html")
+    listaProductos = Producto.objects.all()
+    return render(request, "productos.html", {"listaProductos": listaProductos})
 
 # Página de Iniciar Sesión
 def login(request):

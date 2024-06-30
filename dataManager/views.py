@@ -37,3 +37,20 @@ def eliminarProducto(request, id):
 
     return redirect('/dashboard')
 
+# Edita datos de la tabla Producto
+def editarProducto(request):
+    id_prod = request.POST['inputId']
+    nombre = request.POST['inputName']
+    stock = request.POST['inputStock']
+    precio = request.POST['inputPrice']
+    descuento = request.POST['inputDesc']
+
+    producto = Producto.objects.get(id_prod = id_prod)
+    producto.nombre = nombre
+    producto.stock = stock
+    producto.precio = precio
+    producto.descuento = descuento
+
+    producto.save()
+
+    return redirect('/dashboard')
